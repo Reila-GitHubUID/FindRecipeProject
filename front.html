@@ -13,6 +13,17 @@
 
 <h3>Search and find what you are starving for!</h3>
 
+<nav>
+  <div class="nav-wrapper">
+    <form>
+      <div class="input-field">
+        <input id="search" type="search" required>
+        <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+        <i class="material-icons">close</i>
+      </div>
+    </form>
+  </div>
+</nav>
 
 <a class="waves-effect waves-light btn-large">Breakfast</a>
 <a class="waves-effect waves-light btn-large">Lunch</a>
@@ -30,6 +41,20 @@
     <input type="checkbox" class="filled-in" checked="checked" />
     <span>Allergies</span>
   </label>
+  <ul class="collection with-header">
+  <li class="collection-header"><h4>Type of allergies</h4></li>
+  <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s6">
+          <i class="material-icons prefix">mode_edit</i>
+          <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+          <label for="icon_prefix2">Allergies</label>
+        </div>
+      </div>
+    </form>
+  </div>
+</ul>
 </p>
 <p>
   <label>
@@ -37,16 +62,7 @@
     <span>Kosher</span>
   </label>
 </p>
-<div class="input-field col s12">
-  <select>
-    <option value="" disabled selected>Choose your option</option>
-    <option value="1">Nut</option>
-    <option value="2">Egg</option>
-    <option value="3">Gluten</option>
-    <option value="3">Dairy</option>
-  </select>
-  <label>Materialize Select</label>
-</div>
+
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
  <!-- <script src="assets/js/materialize.js"></script>
