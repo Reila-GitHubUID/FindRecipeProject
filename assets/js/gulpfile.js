@@ -1,5 +1,13 @@
-
   $(document).ready(function(){
-    $('.fixed-action-btn').floatingActionButton();
+    //$('.fixed-action-btn').floatingActionButton();
+
+    let searchInput = $("#search");
+    console.log("searchInput ======" + searchInput);
+
+
+
+
+
+
   });
         
