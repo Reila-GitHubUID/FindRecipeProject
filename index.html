@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- <link type="stylesheet" href="assets/css/materialize.min.css">
+    <link type="stylesheet" href="assets/css/materialize.css"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+
+  <body>
+<title>Recipes and Dine-Out</title>
+
+<h3>Search and find what you are starving for!</h3>
+
+<nav>
+  <div class="nav-wrapper">
+    <form>
+      <div class="input-field">
+        <input id="search" type="search" required>
+        <label class="label-icon" for="search"><i class="material-icons">search </i></label> 
+        <i class="material-icons">close</i>
+      </div>
+    </form>
+    
+  </div>
+</nav>
+<a class="waves-effect waves-light btn-large">Dine-In</a>
+<a class="waves-effect waves-light btn-large">Dine-Out</a>
+<a class="waves-effect waves-light btn-large">Breakfast</a>
+<a class="waves-effect waves-light btn-large">Lunch</a>
+<a class="waves-effect waves-light btn-large">Dinner</a>
+
+<h3>Diet:</h3>
+<p>
+  <label>
+    <input type="checkbox" class="filled-in" checked="checked" />
+    <span>Vegan</span>
+  </label>
+</p>
+<p>
+  <label>
+    <input type="checkbox" class="filled-in" checked="checked" />
+    <span>Kosher</span>
+  </label>
+</p>
+<p>
+    <label>
+   <input type="checkbox" class="filled-in" checked="checked" />
+      <span>Allergies</span>
+  </label>
+     <ul class="collection with-header">
+<li class="collection-header"><h4>Type of allergies</h4></li>
+  <div class="row">
+  <form class="col s12">
+      <div class="row">
+      <div class="input-field col s6">
+    <i class="material-icons prefix">mode_edit</i>
+    <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+      <label for="icon_prefix2">Allergies</label>
+        </div>
+        </div>
+      </form>
+    </div>
+  </ul>
+</p>
+
+
+<div class="fixed-action-btn">
+  <a class="btn-floating btn-large waves-effect waves-light">
+    <i class="large material-icons">map</i>
+  </a>
+  <div>Resturants</div>
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="assets/js/gulpfile.js"></script>
+ <!-- <script src="assets/js/materialize.js"></script>
+ <script src="assets/js/materialize.min.js"></script> -->
+  </body>
+</html>
