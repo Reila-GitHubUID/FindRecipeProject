@@ -1,33 +1,55 @@
-<!doctype html>
-<html class="no-js" lang="en">
+<!DOCTYPE html>
+<html>
   <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foundation Starter Template</title>
-    <link rel="stylesheet" type="text/css" href="./assets/css/semantic/semantic.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- <link type="stylesheet" href="assets/css/materialize.min.css">
+    <link type="stylesheet" href="assets/css/materialize.css"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   </head>
+
   <body>
+<title>Recipes and Dine-Out</title>
 
-    <h1 class="ui header">First header</h1>
-  
-    <div class="ui form">
-        <div class="field">
-          <label>Short Text</label>
-          <textarea rows="2"></textarea>
-        </div>
-      </div>
-    <button class="ui primary button">
-        Save
-      </button>
-      <button class="ui button">
-        Discard
-      </button>
+<h3>Search and find what you are starving for!</h3>
 
-    <script
-    src="https://code.jquery.com/jquery-3.1.1.min.js"
-    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-    crossorigin="anonymous"></script>
-  <script src="./assets/css/semantic/semantic.min.js"></script>
+
+<a class="waves-effect waves-light btn-large">Breakfast</a>
+<a class="waves-effect waves-light btn-large">Lunch</a>
+<a class="waves-effect waves-light btn-large">Dinner</a>
+
+<h3>Your eating style:</h3>
+<p>
+  <label>
+    <input type="checkbox" class="filled-in" checked="checked" />
+    <span>Vegan</span>
+  </label>
+</p>
+<p>
+  <label>
+    <input type="checkbox" class="filled-in" checked="checked" />
+    <span>Allergies</span>
+  </label>
+</p>
+<p>
+  <label>
+    <input type="checkbox" class="filled-in" checked="checked" />
+    <span>Kosher</span>
+  </label>
+</p>
+<div class="input-field col s12">
+  <select>
+    <option value="" disabled selected>Choose your option</option>
+    <option value="1">Nut</option>
+    <option value="2">Egg</option>
+    <option value="3">Gluten</option>
+    <option value="3">Dairy</option>
+  </select>
+  <label>Materialize Select</label>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+ <!-- <script src="assets/js/materialize.js"></script>
+ <script src="assets/js/materialize.min.js"></script> -->
   </body>
 </html>
