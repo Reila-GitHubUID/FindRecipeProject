@@ -16,7 +16,18 @@ $(document).ready(function(){
         console.log("inside edamam's ajax");
         console.log(response);
 
-        mapIt(searchInput);
+        let arr = [];
+        for (let i = 0; i < 10; i++) {
+          arr.push({
+            label: response.hits[i].recipe.label,
+            ingredients: response.hits[i].recipe.ingredientLines,
+            url: response.hits[i].recipe.shareAs
+          });
+          // console.log(arr[i].label + ", " + arr[i].ingredients + ", " + arr[i].url);
+        }
+
+        localStorage.setItem("recipe", JSON.stringify(arr));
+        // mapIt(searchInput);
       });
 
     }
