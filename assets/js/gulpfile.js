@@ -26,7 +26,7 @@ $(document).ready(function(){
           // console.log(arr[i].label + ", " + arr[i].ingredients + ", " + arr[i].url);
         }
 
-        localStorage.setItem("recipe", arr);
+        localStorage.setItem("recipe", JSON.stringify(arr));
         // mapIt(searchInput);
       });
 
