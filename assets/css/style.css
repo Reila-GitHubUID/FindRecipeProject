@@ -33,10 +33,7 @@ body {
     margin-left: 20%;
 }
  /* submit btn */
- .subBtn {
-     margin-left: 60%;
- }
-
+ 
  span {
     color: black;
  }
@@ -49,3 +46,35 @@ body {
      padding-right: 20px;
  }
  
+ #allergiesTitles { 
+    text-align: center;
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  
+}
+
+.allerBar {
+    text-align: center;
+    color: black;
+
+}
+ 
+#subTitle2 {
+   
+    margin-top: -5%;
+    margin-bottom: -10px;
+    text-align: center;
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.inputAlign  {
+    padding-left: 30%;
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+#dietBtns {
+padding-bottom: 30px;
+
+}
