@@ -9,7 +9,6 @@ $(document).ready(function(){
 
       let edamamURL = "https://api.edamam.com/search?q=" + searchInput + "&app_id=29622eed&app_key=898538197a883e8c6561872a165ee750";
   
-      
       $.ajax({
         url: edamamURL,
         method: "GET"
