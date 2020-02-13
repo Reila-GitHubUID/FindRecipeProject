@@ -1,0 +1,52 @@
+body {
+    background-color:#e4d6d6;
+}
+
+#title { 
+    
+    text-align: center;
+    font-size: 70px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#subTitle {
+   
+    margin-top: -5%;
+    text-align: center;
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  
+}
+#dietlable {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 50px;
+}
+
+#dietRest {
+    margin-left: 17%;
+    margin-bottom: 5%;
+    text-decoration: black;
+}
+
+.mealTypesBtns {
+    margin-left: 20%;
+}
+ /* submit btn */
+ .subBtn {
+     margin-left: 60%;
+ }
+
+ span {
+    color: black;
+    text-indent: ;
+ }
+
+ #mGlass {
+     color: black;
+ }
+ 
+ #firstCol {
+     padding-right: 20px;
+ }
+ 
