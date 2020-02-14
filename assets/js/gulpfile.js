@@ -27,6 +27,8 @@ $(document).ready(function(){
         }
 
         localStorage.setItem("recipe", JSON.stringify(arr));
+        $(window).attr("location", "recipePage.html");  // this is to direct users to the recipePage.html
+
         // mapIt(searchInput);
       });
 
