@@ -49,6 +49,9 @@ $(document).ready(function(){
       console.log(response);
 
 
+
+      $(window).attr("location", "locationPage.html");  // this is to direct users to the recipePage.html
+
     });
   }
 
