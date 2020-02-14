@@ -17,6 +17,7 @@ $(document).ready(function(){
 
         let cardReveal = $("<div>").addClass("card-reveal");
         cardReveal.append($("<span>").addClass("card-title grey-text text-darken-4").text("Recipe").append($("<i>").addClass("material-icons right").text("close")));
+        cardReveal.append($("<span>").text(array[i].ingredients));
         cardReveal.append($("<p>").text("placeholder"));
         card.append(cardReveal);
 
@@ -29,8 +30,10 @@ $(document).ready(function(){
                 <img class="activator" src="">
             </div>
             <div class="card-content">
-                <!-- <span class="card-title activator grey-text text-darken-4">recipes<i class="material-icons right">more_vert</i></span>
-                <p></p><a href="https://www.google.com">This is a link</a>Google</p> -->
+                <span class="card-title activator grey-text text-darken-4">recipes<i class="material-icons right">more_vert</i>
+                </span>
+                <p></p>
+                <a href="https://www.google.com">This is a link</a></p> 
             </div>
             <div class="card-reveal">
                 <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
