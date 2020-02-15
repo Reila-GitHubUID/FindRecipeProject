@@ -1,5 +1,13 @@
 body {
     background-color:#e4d6d6;
+   
+}
+
+#imageId {
+    background-image:url("../photos/sideways.png") ;
+    background-repeat: no-repeat;
+    background-size: 17%;
+    background-origin: padding-box;
 }
 
 #title { 
