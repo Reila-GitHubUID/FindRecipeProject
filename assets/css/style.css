@@ -1,12 +1,47 @@
 body {
-    background-color:#e4d6d6;
-}
+     background-color:#cfc0c0; }
+
+     
 
 #title { 
     
     text-align: center;
     font-size: 70px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+.titleResturantPage {
+    padding-top: 35px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 70px;
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.resturantCards {
+    padding-left: 14%;
+    padding-bottom: 20px;
+
+}
+
+.titleRecipePage {
+    margin-top: -15px;
+    text-align: center;
+    font-size: 70px;
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.recipeCards {
+    margin-top: -75px;
+    padding-left: 14%;
+    padding-bottom: 20px;
+
+
 }
 
 #subTitle {
@@ -24,18 +59,25 @@ body {
 }
 
 #dietRest {
-    margin-left: 17%;
+    margin-left: 25%;
     margin-bottom: 5%;
     text-decoration: black;
 }
 
 .mealTypesBtns {
-    margin-left: 20%;
+    margin-left: 30%;
+}
+
+
+/* dine in/dine out btns */
+.mealTypesBtns2 {
+    margin-left: 74%;
+    margin-top: -73px;
 }
  /* submit btn */
  
  span {
-    color: black;
+    color4 black;
  }
 
  #mGlass {
@@ -79,6 +121,13 @@ padding-bottom: 30px;
 
 }
 
+<<<<<<< Updated upstream
 p {
     color: black;
 }
+=======
+.fixed-action-btn{
+    padding-bottom: 10px;
+}
+
+>>>>>>> Stashed changes
