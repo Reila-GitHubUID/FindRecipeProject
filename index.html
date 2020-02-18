@@ -22,14 +22,13 @@
     
     <ul id="navBar" class="right">
       <li><a href="index.html">Main</a></li>
-      <li><a href="recipePage.html">Recipies</a></li>
+      <li><a href="recipePage.html">Recipes</a></li>
       <li><a href="locationPage.html">Map</a></li>
     </ul>
   </div>
-  
-  <!-- main title -->
-
 </nav class="navBar">
+
+<!-- main title -->
 <div id="title">
 <p>Find What Your Craving !!</p>
 <!-- subTitle -->
@@ -37,12 +36,12 @@
 </div>
 
 <!-- search bar  container-->
-<div class="container">
-  <div class="row10">
-    </div>
-    <div class="col s7 offset-s8"><span class="flow-text"></span></div>
- <nav class="white">
 
+<div class="container">
+  <div class="row8">
+    <div class="col s7"><span class="flow-text"></span></div>
+ <nav class=" grey lighten-5">
+  
   <div class="nav-wrapper">
     <form>
       <!-- search bar -->
@@ -50,11 +49,29 @@
         <input id="search" type="search" autoComplete= "off" required>
        <!-- mag glass search bar -->
         <label class="label-icon" for="search"><i class="material-icons" id="mGlass">search </i></label> 
-      
-        <i class="material-icons">close</i>
+      <i class="material-icons">close</i> 
+
+      <!-- Dine In / Dine Out Btn -->
+<div class="mealTypesBtns2">
+  <div id="dietBtns">
+  <a class="waves-effect waves-light btn-large">Dine-In</a>
+  <a class="waves-effect waves-light btn-large">Dine-Out</a>
+  </div>
+  </div>
+</div>
+</div>
+
       </div>
+    </div>
+
     </form>
   </div>
+<!--  -->
+
+
+
+<!--  -->
+
 </nav> 
 <div id="dietlable">
 <p>Select Any Dietary Restrictions:</p>
@@ -165,20 +182,30 @@
   </ul>
 </p>
 <!-- meal btns -->
+<div class="container">
+  <div class="row10">
 <div class="mealTypesBtns">
-<div id="dietBtns">
-<a class="waves-effect waves-light btn-large">Dine-In</a>
-<a class="waves-effect waves-light btn-large">Dine-Out</a>
-<a class="waves-effect waves-light btn-large">Breakfast</a>
+  <div id="dietBtns">
+    <a class="waves-effect waves-light btn-large">Breakfast</a>
 <a class="waves-effect waves-light btn-large">Lunch</a>
 <a class="waves-effect waves-light btn-large">Dinner</a>
 </div>
 </div>
+<!-- <div class="mealTypesBtns2">
+  <div id="dietBtns">
+  <a class="waves-effect waves-light btn-large">Dine-In</a>
+  <a class="waves-effect waves-light btn-large">Dine-Out</a>
+  </div>
+  </div>
+</div>
+</div> -->
+
 <br>
 <br>
 
 
-<!-- floating map icon -->
+<!-- floating map icon btn -->
+
 <div class="fixed-action-btn" id="fixedAct">
   <a class="btn-floating btn-large waves-effect waves-light">
     <i class="large material-icons"> map</i>
@@ -186,6 +213,8 @@
   <div>Resturants</div>
 </div>
 </div>
+
+
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script src="./assets/js/gulpfile.js"></script>
