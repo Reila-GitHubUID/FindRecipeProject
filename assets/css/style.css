@@ -121,13 +121,14 @@ padding-bottom: 30px;
 
 }
 
-<<<<<<< Updated upstream
 p {
     color: black;
 }
-=======
+
 .fixed-action-btn{
     padding-bottom: 10px;
 }
 
->>>>>>> Stashed changes
+.theURL {
+    color: red;
+}
