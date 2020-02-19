@@ -3,7 +3,7 @@
 $(document).ready(function(){
     console.log("Picaboooo!!");
 
-    for (let i = 0; i<array.length; i++) {
+    // for (let i = 0; i<array.length; i++) {
         let div1 = $("<div>").addClass("col s5");
 
         let card = $("<div>").addClass("card");
@@ -24,6 +24,6 @@ $(document).ready(function(){
 
         div1.append(card);
         $(".row").append(div1);
-    }
+    // }
 
 });
