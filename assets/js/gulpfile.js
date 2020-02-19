@@ -1,9 +1,12 @@
 $(document).ready(function(){
-  let searchInput = $("#search").val();
-
   $(document).on('keypress',function(event) {
-    if(event.which == 13) {
-      findRecipe(searchInput);
+    if ($("#search").val() === "") {
+      return;
+    }
+    else {
+      if(event.which == 13) {
+        findRecipe($("#search").val());
+      }
     }
   });
 
@@ -13,11 +16,11 @@ $(document).ready(function(){
       return;
     }
     else {
-      if ($(this).text() === "Dine-In") {        
-        findRecipe(searchInput);       
+      if ($(this).text() === "Dine-In") {  
+        findRecipe($("#search").val());       
       }
       else if ($(this).text() === "Dine-Out") {
-        mapIt(searchInput);
+        mapIt($("#search").val());
         console.log("mapIt(event)");
       }
     }
@@ -61,9 +64,11 @@ function findRecipe(input) {
 
 // AJAX function to find places recommendation
 function mapIt (input) {
-  let placeURL = "https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=" + input + "&inputtype=textquery&fields=photos,formatted_address,name,opening_hours,rating&locationbias=circle:2000@47.6918452,-122.2226413&key=YOUR_API_KEY";
+  console.log("*********** input ********" + input);
+  let placeURL = "https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=" + input + "&inputtype=textquery&fields=photos,formatted_address,name,opening_hours,rating&locationbias=circle:2000@47.6918452,-122.2226413&key=AIzaSyC4LwhAqGAstUc8yaViZjU2yPZDSzBwhPU";
+  // let placeURL = "https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=" + input + "&inputtype=textquery&fields=photos,formatted_address,name,opening_hours,rating&locationbias=circle:2000@47.6918452,-122.2226413&key=AIzaSyCgRcaS_zBe04Z4rSZj6ZnA1VN3vDZIhEc";
 
-  $.ajax( {
+  $.ajax({
     url: placeURL,
     method: "GET"
   }).then (function(response) {
