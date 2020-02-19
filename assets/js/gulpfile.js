@@ -38,18 +38,23 @@ function findRecipe(input) {
     console.log(response);
 
     let arr = [];
-    for (let i = 0; i < 10; i++) {
-      arr.push({
-        label: response.hits[i].recipe.label,
-        ingredients: response.hits[i].recipe.ingredientLines,
-        url: response.hits[i].recipe.shareAs
-      });
+    if (response.q === "")
+    {
+      alert ("You've reached your ajax query limit. You won't be able to do any search anymore!");
+    }
+    else {
+      for (let i = 0; i < 10; i++) {
+        arr.push({
+          label: response.hits[i].recipe.label,
+          ingredients: response.hits[i].recipe.ingredientLines,
+          url: response.hits[i].recipe.shareAs
+        });
+      }
     }
 
-    localStorage.setItem("recipe", JSON.stringify(arr));
-    $(window).attr("location", "recipePage.html");  // this is to direct users to the recipePage.html
+      localStorage.setItem("recipe", JSON.stringify(arr));
+      $(window).attr("location", "recipePage.html");  // this is to direct users to the recipePage.html
 
-    // mapIt(searchInput);
   });
 
 }
