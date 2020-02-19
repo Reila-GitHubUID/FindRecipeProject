@@ -1,11 +1,11 @@
 $(document).ready(function(){
   
-
   $(document).on('keypress',function(e) {
     if(e.which == 13) {
       event.preventDefault();
       let searchInput = $("#search").val();
       console.log("searchInput ====== " + searchInput);
+      console.log(e);
 
       let edamamURL = "https://api.edamam.com/search?q=" + searchInput + "&app_id=29622eed&app_key=898538197a883e8c6561872a165ee750";
   

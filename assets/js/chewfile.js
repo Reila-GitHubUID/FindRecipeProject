@@ -18,6 +18,21 @@ $(document).ready(function(){
         let cardReveal = $("<div>").addClass("card-reveal");
         cardReveal.append($("<span>").addClass("card-title grey-text text-darken-4").text("Recipe").append($("<i>").addClass("material-icons right").text("close")));
         cardReveal.append($("<span>").text(array[i].ingredients));
+        
+        //----------- EL: attempt to separate ingredients into lines --------//
+        // let newSpan = $("<span>");
+        // const eacher = function(collection) {            
+        //     for (let i = 0; i < collection.length; i++) {
+        //         newSpan.text(collection[i], i, collection);
+        //         cardReveal.append(newSpan);
+
+        //         console.log(collection[i]);
+        //     }
+        // };
+        // eacher(array[i].ingredients);
+        // cardReveal.append(newSpan);
+
+        
         cardReveal.append($("<p>").text("placeholder"));
         card.append(cardReveal);
 
