@@ -70,6 +70,7 @@ function mapIt (input) {
 
   $.ajax({
     url: placeURL,
+    crossOrigin: null,
     method: "GET"
   }).then (function(response) {
     console.log("inside Google Place");
