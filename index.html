@@ -12,6 +12,53 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
 
+  <body>
+    <title>Recipes and Dine-Out</title>
+
+    <!-- nav bar -->
+    <nav class="teal lighten-2">  
+      <div class="nav-wrapper container">    
+        <ul id="navBar" class="right">
+          <li><a href="index.html">Main</a></li>
+          <li><a href="recipePage.html">Recipies</a></li>
+          <li><a href="locationPage.html">Map</a></li>
+        </ul>
+      </div>  
+      <!-- main title -->
+    </nav class="navBar">
+    
+    <div id="title">
+      <p>Find What Your Craving !!</p>
+      <!-- subTitle -->
+      <P id="subTitle">Discover New Recipies or New Resturants in Your Area</P>
+    </div>
+
+
+    <!-- search bar  container-->
+    <div class="container">
+      <div class="row10"></div>
+      <div class="col s7 offset-s8"><span class="flow-text"></span></div>
+
+      <nav class="white">
+        <div class="nav-wrapper">
+          <form>
+            <!-- search bar -->
+            <div class="input-field ">
+              <input id="search" type="search" autoComplete= "off" required>
+            <!-- mag glass search bar -->
+              <label class="label-icon" for="search"><i class="material-icons" id="mGlass">search </i></label>             
+              <i class="material-icons">close</i>
+            </div>
+          </form>
+        </div>
+      </nav> 
+
+      <div id="dietlable">
+      <p>Select Any Dietary Restrictions:</p>
+      </div>
+    <!-- allergies -->
+
+    <div class="container">
   <body id="imageId">
 <title>Recipes and Dine-Out</title>
 
@@ -87,73 +134,87 @@
   
     <span class="black-text text-black">
       <div class="row">
-        <div class="col s3"><p>
-          <div id="firstCol">
-          <label>
+        <div class="col s12">
+        <div id="dietRest">
+          <!-- check boxes need to be inchecked with Jquery -->
+    
+      
+        <span class="black-text text-black">
+          <div class="row">
+            <div class="col s3"><p>
+              <div id="firstCol">
+              <label>
+                <input type="checkbox" class="filled-in">
+                <span>Vegan</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="checkbox" class="filled-in">
+                <span>Kosher</span>
+              </label>
+            </p>
+            <p>
+              <label>
             <input type="checkbox" class="filled-in">
-            <span>Vegan</span>
-          </label>
-        </p>
-        <p>
-          <label>
+                <span>Keto</span>
+            </label>
+          </div>
+            </p> 
+          </div>
+            <div class="col s3">
+              <p>
+                <label>
+                  <input type="checkbox" class="filled-in">
+                  <span>Kosher</span>
+                </label>
+              </p>
+              <p>
+                <label>
+              <input type="checkbox" class="filled-in">
+                  <span>Paleo</span>
+              </label>
+            </p>
+            <p>
+              <label>
             <input type="checkbox" class="filled-in">
-            <span>Kosher</span>
-          </label>
-        </p>
-        <p>
-          <label>
-         <input type="checkbox" class="filled-in">
-            <span>Keto</span>
-        </label>
-      </div>
-        </p> 
-      </div>
-        <div class="col s3">
-          <p>
-            <label>
-              <input type="checkbox" class="filled-in">
-              <span>Kosher</span>
+                <span>Gluten Free</span>
             </label>
-          </p>
-          <p>
-            <label>
-           <input type="checkbox" class="filled-in">
-              <span>Paleo</span>
-          </label>
-        </p>
-        <p>
-          <label>
-         <input type="checkbox" class="filled-in">
-            <span>Gluten Free</span>
-        </label>
-        </p> 
-        </div>
-        <div class="col s3">
-          <p>
-            <label>
+            </p> 
+            </div>
+            <div class="col s3">
+              <p>
+                <label>
+                  <input type="checkbox" class="filled-in">
+                  <span>Atkins</span>
+                </label>
+              </p>
+              <p>
+                <label>
               <input type="checkbox" class="filled-in">
-              <span>Atkins</span>
+                  <span>pescatarian</span>
+              </label>
+            </p>
+            <p>
+              <label>
+            <input type="checkbox" class="filled-in">
+                <span>Dukan</span>
             </label>
-          </p>
-          <p>
-            <label>
-           <input type="checkbox" class="filled-in">
-              <span>pescatarian</span>
-          </label>
-        </p>
-        <p>
-          <label>
-         <input type="checkbox" class="filled-in">
-            <span>Dukan</span>
-        </label>
-        
-        </p> 
-        </div>
-      </div>
-</div>
-</div>
-</div>
+            
+            </p> 
+            </div>
+          </div>
+    </div>
+    </div>
+    </div>
 
+    <!-- allergies search -->
+
+
+
+
+        
+    <p id="subTitle2">Input Allergies</p>
 <!-- <img src="./assets/photos/sideways.png">   -->
 
 
@@ -161,26 +222,55 @@
     
  <p id="subTitle2">Input Allergies</p>
 
-<div class="inputAlign">
- <div class="row">
-  <form class="col l12">
+    <div class="inputAlign">
     <div class="row">
-      <div class="input-field col s6">
-        <i class="material-icons prefix">mode_edit</i>
-        <textarea id="icon_prefix2" class="materialize-textarea" ></textarea>
-        <label for="icon_prefix2">Input Allergies</label>
-      </div>
-    </div>
-  </form>
-</div>
-</div>
-
-    
-        
+      <form class="col l12">
+        <div class="row">
+          <div class="input-field col s6">
+            <i class="material-icons prefix">mode_edit</i>
+            <textarea id="icon_prefix2" class="materialize-textarea" ></textarea>
+            <label for="icon_prefix2">Input Allergies</label>
+          </div>
+        </div>
       </form>
     </div>
+    </div>
+
+        
+            
+          </form>
+    </div>
+
+
   </ul>
 </p>
+        <!-- meal btns -->
+        <div class="mealTypesBtns">
+          <div id="dietBtns">
+            <a class="waves-effect waves-light btn-large">Dine-In</a>
+            <a class="waves-effect waves-light btn-large">Dine-Out</a>
+            <a class="waves-effect waves-light btn-large">Breakfast</a>
+            <a class="waves-effect waves-light btn-large">Lunch</a>
+            <a class="waves-effect waves-light btn-large">Dinner</a>
+          </div>
+        </div>
+        <br>
+        <br>
+
+
+      <!-- floating map icon -->
+      <!-- <div class="fixed-action-btn" id="fixedAct">
+        <a class="btn-floating btn-large waves-effect waves-light">
+          <i class="large material-icons"> map</i>
+        </a>
+        <div>Resturants</div>
+      </div>
+    </div> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./assets/js/gulpfile.js"></script>
+    <!-- <script src="assets/js/materialize.js"></script>
+    <script src="assets/js/materialize.min.js"></script> -->
 <!-- meal btns -->
 <div class="container">
   <div class="row10">
