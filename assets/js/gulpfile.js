@@ -1,5 +1,5 @@
 localStorage.setItem("recipe", "");
-let temp = $(".filled-in").
+// let temp = $(".filled-in").
 
 $(document).ready(function(){
   $(document).on('keypress',function(event) {
@@ -28,10 +28,11 @@ $(document).ready(function(){
         findMap();
       }
     }
-  });
+  });  
 
   
-  $('input[type="checkbox"]').click(function(){
+  $('input[type="checkbox"]').click(function() {
+    console.log($(this).prop("checked").text());
     if($(this).prop("checked") == true){
         alert("Checkbox is checked.");
     }
@@ -39,7 +40,6 @@ $(document).ready(function(){
         alert("Checkbox is unchecked.");
     }
   });
-
 
 });
 
