@@ -32,12 +32,9 @@ $(document).ready(function(){
 
   
   $('input[type="checkbox"]').click(function() {
-    console.log($(this).prop("checked").text());
     if($(this).prop("checked") == true){
-        alert("Checkbox is checked.");
-    }
-    else if($(this).prop("checked") == false){
-        alert("Checkbox is unchecked.");
+        alert("Checkbox is checked......" + $(this).attr("id"));
+
     }
   });
 
@@ -89,6 +86,7 @@ function findMap() {
     url: edamamURL,
     method: "GET"
   }).then( function(response) {
+    console.lget(response);
 
     let arr = [];
     if (response.q === "")
