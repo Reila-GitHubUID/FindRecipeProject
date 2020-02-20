@@ -1,29 +1,37 @@
 localStorage.setItem("recipe", "");
+let $search = $("#search").val();
 
 $(document).ready(function(){
   $(document).on('keypress',function(event) {
-    if ($("#search").val() === "") {
+    event.preventDefault();  
+
+    if ($search === "") {
       return;
     }
     else {
       if(event.which == 13) {
-        findRecipe($("#search").val());
+        findRecipe();
+        $(window).attr("location", "recipePage.html");  // this is to direct users to the recipePage.html
       }
     }
   });
 
   
   $(".btn-large").click(function() {
-    if ($("#search").val() === "") {
+    event.preventDefault();  
+
+    if ($search === "") {
       return;
     }
     else {
       if ($(this).text() === "Dine-In") {  
-        findRecipe($("#search").val());       
+        findRecipe(); 
+        $(window).attr("location", "recipePage.html");  // this is to direct users to the recipePage.html
+      
       }
       else if ($(this).text() === "Dine-Out") {
-        mapIt($("#search").val());
-        console.log("mapIt(event)");
+        findRecipe();
+        $(window).attr("location", "locationPage.html");  // this is to direct users to the locationPage.html
       }
     }
   });
@@ -31,9 +39,8 @@ $(document).ready(function(){
 });
 
 // AJAX function to find the recipe
-function findRecipe(input) {   
-  event.preventDefault();  
-  let edamamURL = "https://api.edamam.com/search?q=" + input + "&app_id=29622eed&app_key=898538197a883e8c6561872a165ee750";
+function findRecipe() {   
+  let edamamURL = "https://api.edamam.com/search?q=" + $search + "&app_id=29622eed&app_key=898538197a883e8c6561872a165ee750";
 
   $.ajax({
     url: edamamURL,
@@ -59,14 +66,7 @@ function findRecipe(input) {
     }
 
       localStorage.setItem("recipe", JSON.stringify(arr));
-      $(window).attr("location", "recipePage.html");  // this is to direct users to the recipePage.html
 
   });
 
 }
-
-// A function to find places recommendation
-// function mapIt (input) {
-//   console.log("*********** input ********" + input);
-//   let placeURL = "https://maps.googleapis.com/maps/api/json?input=" + input + "&inputtype=textquery&fields=photos,formatted_address,name,opening_hours,rating&locationbias=circle:2000@37.8647953,-122.2583164&key=AIzaSyC4LwhAqGAstUc8yaViZjU2yPZDSzBwhPU";
-// }
