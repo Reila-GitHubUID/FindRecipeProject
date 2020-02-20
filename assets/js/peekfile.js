@@ -1,5 +1,3 @@
-console.log("Picaboooo!!");
-
 let array = JSON.parse(localStorage.getItem("recipe"));
 let searchWord = array[0];
 
