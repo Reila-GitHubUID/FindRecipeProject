@@ -9,15 +9,15 @@ var service;
 var infowindow;
 
 function initMap() {
-    var sydney = new google.maps.LatLng(-33.867, 151.195);
+    var berkeley = new google.maps.LatLng(37.8647953, -122.2583164);
 
     infowindow = new google.maps.InfoWindow();
 
     map = new google.maps.Map(
-        document.getElementById('map'), { center: sydney, zoom: 15 });
+        document.getElementById('map'), { center: berkeley, zoom: 15 });
 
         var request = {
-            location: pyrmont,
+            location: berkeley,
             radius: '500',
             query: 'restaurant'
           };

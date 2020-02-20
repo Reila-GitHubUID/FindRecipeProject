@@ -1,201 +1,204 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
-    <!-- <link type="stylesheet" href="assets/css/materialize.min.css">
+
+<head>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+  <!-- <link type="stylesheet" href="assets/css/materialize.min.css">
     <link type="stylesheet" href="assets/css/materialize.css"> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    
-    <!-- Added link to the jQuery library -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  </head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <body>
-    <title>Recipes and Dine-Out</title>
+  <!-- Added link to the jQuery library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
 
-    <!-- nav bar -->
-    <nav class="teal lighten-2">  
-      <div class="nav-wrapper container">    
-        <ul id="navBar" class="right">
-          <li><a href="index.html">Main</a></li>
-          <li><a href="recipePage.html">Recipes</a></li>
-          <li><a href="locationPage.html">Map</a></li>
-        </ul>
-      </div>  
-      <!-- main title -->
-    </nav class="navBar">
-    
-    <div id="title">
-      <p>Find What Your Craving !!</p>
-      <!-- subTitle -->
-      <P id="subTitle">Discover New Recipes or New Restaurants in Your Area</P>
+<body>
+  <title>Recipes and Dine-Out</title>
+
+  <!-- nav bar -->
+  <nav class="teal lighten-2">
+    <div class="nav-wrapper container">
+      <ul id="navBar" class="right">
+        <li><a href="index.html">Main</a></li>
+        <li><a href="recipePage.html">Recipes</a></li>
+        <li><a href="locationPage.html">Map</a></li>
+      </ul>
     </div>
+    <!-- main title -->
+  </nav class="navBar">
+
+  <div id="title">
+    <p>Find What Your Craving !!</p>
+    <!-- subTitle -->
+    <P id="subTitle">Discover New Recipes or New Restaurants in Your Area</P>
+  </div>
 
 
-    <!-- search bar  container-->
-    <div class="container">
-      <div class="row10"></div>
-      <div class="col s7 offset-s8"><span class="flow-text"></span></div>
+  <!-- search bar  container-->
+  <div class="container">
+    <div class="row10"></div>
+    <div class="col s7 offset-s8"><span class="flow-text"></span></div>
 
-      <nav class="white">
-        <div class="nav-wrapper">
-          <form>
-            <!-- search bar -->
-            <div class="input-field ">
-              <input id="search" type="search" autoComplete= "off" required>
+    <nav class="white">
+      <div class="nav-wrapper">
+        <form>
+          <!-- search bar -->
+          <div class="input-field ">
+            <input id="search" type="search" autoComplete="off" required>
             <!-- mag glass search bar -->
-              <label class="label-icon" for="search"><i class="material-icons" id="mGlass">search </i></label>             
-              <i class="material-icons">close</i>
-            </div>
-          </form>
-        </div>
-      </nav> 
-
-      <div id="dietlable">
-      <p>Select Any Dietary Restrictions:</p>
+            <label class="label-icon" for="search"><i class="material-icons" id="mGlass">search </i></label>
+            <i class="material-icons">close</i>
+          </div>
+        </form>
       </div>
+    </nav>
+
+    <div id="dietlable">
+      <p>Select Any Dietary Restrictions:</p>
+    </div>
     <!-- allergies -->
 
     <div class="container">
-  <body id="imageId">
-<title>Recipes and Dine-Out</title>
 
-<!-- nav bar -->
+      <body id="imageId">
+        <title>Recipes and Dine-Out</title>
 
-      <!-- Dine In / Dine Out Btn -->
-<div class="mealTypesBtns2">
-  <div id="dietBtns">
-  <a class="waves-effect waves-light btn-large">Dine-In</a>
-  <a class="waves-effect waves-light btn-large">Dine-Out</a>
-  </div>
-  </div>
-</div>
-</div>
+        <!-- nav bar -->
 
-      </div>
-    </div>
-
-    </form>
-  </div>
-<!--  -->
-
-<div class="container">
-  <div class="row">
-    <div class="col s12">
-    <div id="dietRest">
-      <!-- check boxes need to be inchecked with Jquery -->
- 
-  
-    <span class="black-text text-black">
-      <div class="row">
-        <div class="col s12">
-        <div id="dietRest">
-          <!-- check boxes need to be inchecked with Jquery -->
-    
-      
-        <span class="black-text text-black">
-          <div class="row">
-            <div class="col s3"><p>
-              <div id="firstCol">
-              <label>
-                <input type="checkbox" class="filled-in">
-                <span>Vegan</span>
-              </label>
-            </p>
-            <p>
-              <label>
-                <input type="checkbox" class="filled-in">
-                <span>Kosher</span>
-              </label>
-            </p>
-            <p>
-              <label>
-            <input type="checkbox" class="filled-in">
-                <span>Keto</span>
-            </label>
-          </div>
-            </p> 
-          </div>
-            <div class="col s3">
-              <p>
-                <label>
-                  <input type="checkbox" class="filled-in">
-                  <span>Kosher</span>
-                </label>
-              </p>
-              <p>
-                <label>
-              <input type="checkbox" class="filled-in">
-                  <span>Paleo</span>
-              </label>
-            </p>
-            <p>
-              <label>
-            <input type="checkbox" class="filled-in">
-                <span>Gluten Free</span>
-            </label>
-            </p> 
-            </div>
-            <div class="col s3">
-              <p>
-                <label>
-                  <input type="checkbox" class="filled-in">
-                  <span>Atkins</span>
-                </label>
-              </p>
-              <p>
-                <label>
-              <input type="checkbox" class="filled-in">
-                  <span>pescatarian</span>
-              </label>
-            </p>
-            <p>
-              <label>
-            <input type="checkbox" class="filled-in">
-                <span>Dukan</span>
-            </label>
-            
-            </p> 
-            </div>
-          </div>
-    </div>
-    </div>
-    </div>
-
-    <!-- allergies search -->
-
-<!-- <img src="./assets/photos/sideways.png">   -->
-
-
-<!-- allergies search -->
-    
- <p id="subTitle2">Input Allergies</p>
-
-    <div class="inputAlign">
-    <div class="row">
-      <form class="col l12">
-        <div class="row">
-          <div class="input-field col s6">
-            <i class="material-icons prefix">mode_edit</i>
-            <textarea id="icon_prefix2" class="materialize-textarea" ></textarea>
-            <label for="icon_prefix2">Input Allergies</label>
+        <!-- Dine In / Dine Out Btn -->
+        <div class="mealTypesBtns2">
+          <div id="dietBtns">
+            <a class="waves-effect waves-light btn-large">Dine-In</a>
+            <a class="waves-effect waves-light btn-large">Dine-Out</a>
           </div>
         </div>
-      </form>
     </div>
-    </div>
+  </div>
 
-        
-            
-          </form>
-    </div>
+  </div>
+  </div>
+
+  </form>
+  </div>
+  <!--  -->
+
+  <div class="container">
+    <div class="row">
+      <div class="col s12">
+        <div id="dietRest">
+          <!-- check boxes need to be inchecked with Jquery -->
 
 
-  </ul>
-</p>
-        <!-- meal btns -->
+          <span class="black-text text-black">
+            <div class="row">
+              <div class="col s12">
+                <div id="dietRest">
+                  <!-- check boxes need to be inchecked with Jquery -->
+
+
+                  <span class="black-text text-black">
+                    <div class="row">
+                      <div class="col s3">
+                        <p>
+                          <div id="firstCol">
+                            <label>
+                              <input type="checkbox" class="filled-in">
+                              <span>Vegan</span>
+                            </label>
+                        </p>
+                        <p>
+                          <label>
+                            <input type="checkbox" class="filled-in">
+                            <span>Kosher</span>
+                          </label>
+                        </p>
+                        <p>
+                          <label>
+                            <input type="checkbox" class="filled-in">
+                            <span>Keto</span>
+                          </label>
+                      </div>
+                      </p>
+                    </div>
+                    <div class="col s3">
+                      <p>
+                        <label>
+                          <input type="checkbox" class="filled-in">
+                          <span>Kosher</span>
+                        </label>
+                      </p>
+                      <p>
+                        <label>
+                          <input type="checkbox" class="filled-in">
+                          <span>Paleo</span>
+                        </label>
+                      </p>
+                      <p>
+                        <label>
+                          <input type="checkbox" class="filled-in">
+                          <span>Gluten Free</span>
+                        </label>
+                      </p>
+                    </div>
+                    <div class="col s3">
+                      <p>
+                        <label>
+                          <input type="checkbox" class="filled-in">
+                          <span>Atkins</span>
+                        </label>
+                      </p>
+                      <p>
+                        <label>
+                          <input type="checkbox" class="filled-in">
+                          <span>pescatarian</span>
+                        </label>
+                      </p>
+                      <p>
+                        <label>
+                          <input type="checkbox" class="filled-in">
+                          <span>Dukan</span>
+                        </label>
+
+                      </p>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <!-- allergies search -->
+
+        <!-- <img src="./assets/photos/sideways.png">   -->
+
+
+        <!-- allergies search -->
+
+        <p id="subTitle2">Input Allergies</p>
+
+        <div class="inputAlign">
+          <div class="row">
+            <form class="col l12">
+              <div class="row">
+                <div class="input-field col s6">
+                  <i class="material-icons prefix">mode_edit</i>
+                  <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+                  <label for="icon_prefix2">Input Allergies</label>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+
+
+        </form>
+      </div>
+
+
+      </ul>
+      </p>
+      <!-- meal btns -->
 
       <!-- floating map icon -->
       <!-- <div class="fixed-action-btn" id="fixedAct">
@@ -206,21 +209,21 @@
       </div>
     </div> -->
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="./assets/js/gulpfile.js"></script>
-    <!-- <script src="assets/js/materialize.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <script src="./assets/js/gulpfile.js"></script>
+      <!-- <script src="assets/js/materialize.js"></script>
     <script src="assets/js/materialize.min.js"></script> -->
-<!-- meal btns -->
-<div class="container">
-  <div class="row10">
-<div class="mealTypesBtns">
-  <div id="dietBtns">
-    <a class="waves-effect waves-light btn-large">Breakfast</a>
-<a class="waves-effect waves-light btn-large">Lunch</a>
-<a class="waves-effect waves-light btn-large">Dinner</a>
-</div>
-</div>
-<!-- <div class="mealTypesBtns2">
+      <!-- meal btns -->
+      <div class="container">
+        <div class="row10">
+          <div class="mealTypesBtns">
+            <div id="dietBtns">
+              <a class="waves-effect waves-light btn-large">Breakfast</a>
+              <a class="waves-effect waves-light btn-large">Lunch</a>
+              <a class="waves-effect waves-light btn-large">Dinner</a>
+            </div>
+          </div>
+          <!-- <div class="mealTypesBtns2">
   <div id="dietBtns">
   <a class="waves-effect waves-light btn-large">Dine-In</a>
   <a class="waves-effect waves-light btn-large">Dine-Out</a>
@@ -229,33 +232,32 @@
 </div>
 </div> -->
 
-<br>
-<br>
+          <br>
+          <br>
 
 
-<!-- floating map icon btn -->
+          <!-- floating map icon btn -->
 
-<div class="fixed-action-btn" id="fixedAct">
-  <a class="btn-floating btn-large waves-effect waves-light" href="index.html">
-    <i class="large material-icons">home</i>
-  </a>
-  <ul>
-    <li><a class="btn-floating waves-effect waves-light" id="scoot" href="locationPage.html"><i class="material-icons">map</i></a>Restaurants</li>
-    <li><a class="btn-floating waves-effect waves-light" id="scoot2" href="recipePage.html"><i class="material-icons">restaurant_menu</i></a>Recipes</li>
-  </ul>
-  <div>Main Menu</div>
-</div>
-</div>
+          <div class="fixed-action-btn" id="fixedAct">
+            <a class="btn-floating btn-large waves-effect waves-light" href="index.html">
+              <i class="large material-icons">home</i>
+            </a>
+            <ul>
+              <li><a class="btn-floating waves-effect waves-light" id="scoot" href="locationPage.html"><i
+                    class="material-icons">map</i></a>Restaurants</li>
+              <li><a class="btn-floating waves-effect waves-light" id="scoot2" href="recipePage.html"><i
+                    class="material-icons">restaurant_menu</i></a>Recipes</li>
+            </ul>
+            <div>Main Menu</div>
+          </div>
+        </div>
 
 
-    <script src="./assets/js/peekfile.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyC4LwhAqGAstUc8yaViZjU2yPZDSzBwhPU"> </script> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script src="./assets/js/peekfile.js"></script>
+        <script
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4LwhAqGAstUc8yaViZjU2yPZDSzBwhPU&libraries=places&callback=initMap"
+          async defer></script>
+</body>
 
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4LwhAqGAstUc8yaViZjU2yPZDSzBwhPU&libraries=places&callback=initMap" async defer></script>
-
-    
-    <!-- <script src="assets/js/materialize.js"></script>
-    <script src="assets/js/materialize.min.js"></script> -->
-  </body>
 </html>
