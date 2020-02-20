@@ -1,9 +1,12 @@
 $(document).ready(function(){
-  let searchInput = $("#search").val();
-
   $(document).on('keypress',function(event) {
-    if(event.which == 13) {
-      findRecipe(searchInput);
+    if ($("#search").val() === "") {
+      return;
+    }
+    else {
+      if(event.which == 13) {
+        findRecipe($("#search").val());
+      }
     }
   });
 
@@ -13,11 +16,11 @@ $(document).ready(function(){
       return;
     }
     else {
-      if ($(this).text() === "Dine-In") {        
-        findRecipe(searchInput);       
+      if ($(this).text() === "Dine-In") {  
+        findRecipe($("#search").val());       
       }
       else if ($(this).text() === "Dine-Out") {
-        mapIt(searchInput);
+        mapIt($("#search").val());
         console.log("mapIt(event)");
       }
     }
@@ -61,18 +64,76 @@ function findRecipe(input) {
 
 // AJAX function to find places recommendation
 function mapIt (input) {
-  let placeURL = "https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=" + input + "&inputtype=textquery&fields=photos,formatted_address,name,opening_hours,rating&locationbias=circle:2000@47.6918452,-122.2226413&key=YOUR_API_KEY";
+  console.log("*********** input ********" + input);
+  let placeURL = "https://maps.googleapis.com/maps/api/json?input=" + input + "&inputtype=textquery&fields=photos,formatted_address,name,opening_hours,rating&locationbias=circle:2000@37.8647953,-122.2583164&key=AIzaSyC4LwhAqGAstUc8yaViZjU2yPZDSzBwhPU";
+  // let placeURL = "https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=" + input + "&inputtype=textquery&fields=photos,formatted_address,name,opening_hours,rating&locationbias=circle:2000@37.8647953,-122.2583164&key=AIzaSyCgRcaS_zBe04Z4rSZj6ZnA1VN3vDZIhEc";
 
-  $.ajax( {
+  
+  // var map;
+  // var infowindow;
+
+  // function initialize() {
+  //   console.log("inside initialize()");
+  //   var center = new google.maps.LatLng(37.8647953, -122.2583164);
+  //   map = new google.maps.Map(document.getElementById("map"), {
+  //     center: center,
+  //     zoom:13
+  //   });
+
+  //   var request = {
+  //     location: ClientRect, 
+  //     radius: 8047, // in meters
+  //     types: ['cafe']
+  //   };
+
+  //   infowindow = new google.maps.InfoWindow();
+  //   var service = new google.maps.places.PlacesService(map);
+  //   service.nearbySearch(request, callback);
+  // }
+
+  // function callback (results, status) {
+  //   console.log("inside callback()");
+  //   if (status === google.maps.places.PlacesServiceStatus.OK) {
+  //     for (var i = 0; i<results.length; i++) {
+  //       createMarker(results[i]);
+  //     }
+  //   }
+  // }
+
+  // function createMarker (place) {
+  //   console.log("inside createMarker()");
+  //   var placeLoc = place.geometry.location;
+  //   var marker = new google.maps.Marker({
+  //     map: map, 
+  //     position: place.geometery.location
+  //   });
+
+  //   google.maps.event.addListener (marker, 'click', function() {
+  //     infowindow.setContent(place.name);
+  //     infowindow.open(map, this);
+  //   });
+  // }
+
+  // google.maps.event.addDomListener(window, 'load', initialize);
+
+  $.ajax({
     url: placeURL,
+    method: "POST"
+  })
+
+  $.ajax({
+    url: placeURL,
+    crossOrigin: null,
     method: "GET"
   }).then (function(response) {
     console.log("inside Google Place");
     console.log(response);
 
-
-
     $(window).attr("location", "locationPage.html");  // this is to direct users to the locationPage.html
 
   });
 }
+
+$(document).ready(function(){
+  $('.fixed-action-btn').floatingActionButton();
+});

@@ -85,7 +85,7 @@ body {
  /* submit btn */
  
  span {
-    color4: black;
+    color: black;
  }
 
  #mGlass {
@@ -139,4 +139,13 @@ p {
 
 .theURL {
     color: red;
+}
+
+#scoot {
+    margin-right: 22px;
+}
+#scoot2 {
+    margin-left: 2px;
+    margin-right: 10px;
+    margin-bottom: 12px;
 }

@@ -20,7 +20,7 @@
       <div class="nav-wrapper container">    
         <ul id="navBar" class="right">
           <li><a href="index.html">Main</a></li>
-          <li><a href="recipePage.html">Recipies</a></li>
+          <li><a href="recipePage.html">Recipes</a></li>
           <li><a href="locationPage.html">Map</a></li>
         </ul>
       </div>  
@@ -30,7 +30,7 @@
     <div id="title">
       <p>Find What Your Craving !!</p>
       <!-- subTitle -->
-      <P id="subTitle">Discover New Recipies or New Resturants in Your Area</P>
+      <P id="subTitle">Discover New Recipes or New Restaurants in Your Area</P>
     </div>
 
 
@@ -63,40 +63,6 @@
 <title>Recipes and Dine-Out</title>
 
 <!-- nav bar -->
-<nav class="teal lighten-2">
-  
-  <div class="nav-wrapper container">
-    
-    <ul id="navBar" class="right">
-      <li><a href="index.html">Main</a></li>
-      <li><a href="recipePage.html">Recipes</a></li>
-      <li><a href="locationPage.html">Map</a></li>
-    </ul>
-  </div>
-</nav class="navBar">
-
-<!-- main title -->
-<div id="title">
-<p>Find What Your Craving !!</p>
-<!-- subTitle -->
-<P id="subTitle">Discover New Recipies or New Resturants in Your Area</P>
-</div>
-
-<!-- search bar  container-->
-
-<div class="container">
-  <div class="row8">
-    <div class="col s7"><span class="flow-text"></span></div>
- <nav class=" grey lighten-5">
-  
-  <div class="nav-wrapper">
-    <form>
-      <!-- search bar -->
-      <div class="input-field ">
-        <input id="search" type="search" autoComplete= "off" required>
-       <!-- mag glass search bar -->
-        <label class="label-icon" for="search"><i class="material-icons" id="mGlass">search </i></label> 
-      <i class="material-icons">close</i> 
 
       <!-- Dine In / Dine Out Btn -->
 <div class="mealTypesBtns2">
@@ -114,16 +80,6 @@
     </form>
   </div>
 <!--  -->
-
-
-
-<!--  -->
-
-</nav> 
-<div id="dietlable">
-<p>Select Any Dietary Restrictions:</p>
-</div>
-<!-- allergies -->
 
 <div class="container">
   <div class="row">
@@ -210,11 +166,6 @@
 
     <!-- allergies search -->
 
-
-
-
-        
-    <p id="subTitle2">Input Allergies</p>
 <!-- <img src="./assets/photos/sideways.png">   -->
 
 
@@ -245,18 +196,6 @@
   </ul>
 </p>
         <!-- meal btns -->
-        <div class="mealTypesBtns">
-          <div id="dietBtns">
-            <a class="waves-effect waves-light btn-large">Dine-In</a>
-            <a class="waves-effect waves-light btn-large">Dine-Out</a>
-            <a class="waves-effect waves-light btn-large">Breakfast</a>
-            <a class="waves-effect waves-light btn-large">Lunch</a>
-            <a class="waves-effect waves-light btn-large">Dinner</a>
-          </div>
-        </div>
-        <br>
-        <br>
-
 
       <!-- floating map icon -->
       <!-- <div class="fixed-action-btn" id="fixedAct">
@@ -297,18 +236,23 @@
 <!-- floating map icon btn -->
 
 <div class="fixed-action-btn" id="fixedAct">
-  <a class="btn-floating btn-large waves-effect waves-light">
-    <i class="large material-icons"> map</i>
+  <a class="btn-floating btn-large waves-effect waves-light" href="index.html">
+    <i class="large material-icons">home</i>
   </a>
-  <div>Resturants</div>
+  <ul>
+    <li><a class="btn-floating waves-effect waves-light" id="scoot" href="locationPage.html"><i class="material-icons">map</i></a>Restaurants</li>
+    <li><a class="btn-floating waves-effect waves-light" id="scoot2" href="recipePage.html"><i class="material-icons">restaurant_menu</i></a>Recipes</li>
+  </ul>
+  <div>Main Menu</div>
 </div>
 </div>
 
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-<script src="./assets/js/gulpfile.js"></script>
- <!-- <script src="assets/js/materialize.js"></script>
- <script src="assets/js/materialize.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places&callback=activatePlacesSearch&key=AIzaSyC4LwhAqGAstUc8yaViZjU2yPZDSzBwhPU"> </script> -->
+    <script src="./assets/js/gulpfile.js"></script>
+    <!-- <script src="assets/js/materialize.js"></script>
+    <script src="assets/js/materialize.min.js"></script> -->
   </body>
 </html>
