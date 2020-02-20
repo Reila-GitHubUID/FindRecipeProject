@@ -5,8 +5,6 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
-  <!-- <link type="stylesheet" href="assets/css/materialize.min.css">
-    <link type="stylesheet" href="assets/css/materialize.css"> -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <style>
@@ -49,16 +47,15 @@
     <h3 id="title">Discover Awesome Restaurants!</h3>
   </div>
 
-  <div id="map"></div>
+  <div id="map">
+    <!-- This is the location where the results will be displayed -->
+  </div>
 
 
 
-
-  <script src="./assets/js/peekfile.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <script
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4LwhAqGAstUc8yaViZjU2yPZDSzBwhPU&libraries=places&callback=initMap"
-    async defer></script>
+  <script src="./assets/js/peekfile.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4LwhAqGAstUc8yaViZjU2yPZDSzBwhPU&libraries=places&callback=initMap" async defer></script>
 
 </body>
 
