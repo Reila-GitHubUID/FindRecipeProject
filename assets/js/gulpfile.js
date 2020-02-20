@@ -46,8 +46,6 @@ function findRecipe() {
     url: edamamURL,
     method: "GET"
   }).then( function(response) {
-    console.log("inside edamam's ajax");
-    console.log(response);
 
     let arr = [];
     if (response.q === "")
@@ -65,7 +63,7 @@ function findRecipe() {
       }
     }
 
-      localStorage.setItem("recipe", JSON.stringify(arr));
+    localStorage.setItem("recipe", JSON.stringify(arr));
 
   });
 

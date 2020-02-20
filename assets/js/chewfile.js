@@ -1,8 +1,6 @@
 let array = JSON.parse(localStorage.getItem("recipe"));
 
 $(document).ready(function(){
-    console.log("yippie!!");
-
     for (let i = 1; i<array.length; i++) {
         let div1 = $("<div>").addClass("col s5");
 
