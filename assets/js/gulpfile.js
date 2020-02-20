@@ -1,3 +1,5 @@
+localStorage.setItem("recipe", "");
+
 $(document).ready(function(){
   $(document).on('keypress',function(event) {
     if ($("#search").val() === "") {
@@ -46,6 +48,7 @@ function findRecipe(input) {
       alert ("You've reached your ajax query limit. You won't be able to do any search anymore!");
     }
     else {
+      arr.push(input);
       for (let i = 0; i < 10; i++) {
         arr.push({
           label: response.hits[i].recipe.label,
@@ -63,7 +66,7 @@ function findRecipe(input) {
 }
 
 // A function to find places recommendation
-function mapIt (input) {
-  console.log("*********** input ********" + input);
-  let placeURL = "https://maps.googleapis.com/maps/api/json?input=" + input + "&inputtype=textquery&fields=photos,formatted_address,name,opening_hours,rating&locationbias=circle:2000@37.8647953,-122.2583164&key=AIzaSyC4LwhAqGAstUc8yaViZjU2yPZDSzBwhPU";
-}
+// function mapIt (input) {
+//   console.log("*********** input ********" + input);
+//   let placeURL = "https://maps.googleapis.com/maps/api/json?input=" + input + "&inputtype=textquery&fields=photos,formatted_address,name,opening_hours,rating&locationbias=circle:2000@37.8647953,-122.2583164&key=AIzaSyC4LwhAqGAstUc8yaViZjU2yPZDSzBwhPU";
+// }
