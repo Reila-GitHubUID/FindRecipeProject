@@ -1,13 +1,28 @@
 <!DOCTYPE html>
 <html>
 
+
 <head>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
-  <!-- <link type="stylesheet" href="assets/css/materialize.min.css">
-    <link type="stylesheet" href="assets/css/materialize.css"> -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+    #map {
+      height: 50%;
+    }
+
+    /* Optional: Makes the sample page fill the window. */
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
 
   <!-- Added link to the jQuery library -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -16,26 +31,28 @@
 <body>
   <title>Recipes and Dine-Out</title>
 
-  <nav class="nav-extended teal lighten-2">
+  <nav class="teal lighten-2">
+
     <div class="nav-wrapper container">
+
       <ul id="navBar" class="right">
         <li><a href="index.html">Main</a></li>
         <li><a href="recipePage.html">Recipes</a></li>
         <li><a href="locationPage.html">Map</a></li>
       </ul>
+
+      
     </div>
   </nav>
 
-    <!-- title -->
-    <div class="titleResturantPage">
-      <h3 id="title">Discover Awesome Restaurants!</h3>
-    </div>
+  <!-- title -->
+  <div class="titleResturantPage">
+    <h3 id="title">Discover Awesome Restaurants!</h3>
+  </div>
 
-    <br>
-
-      <!-- This is the place where the results will be displayed -->
-      <!-- resturant cards -->
-     
+  <div id="map">
+    <!-- This is the location where the results will be displayed -->
+  </div>
 
       <!-- fixed btn -->
       <div class="fixed-action-btn" id="fixedAct">
@@ -69,11 +86,9 @@
       </nav> 
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="assets/js/gulpfile.js"></script>
-    <!-- <script src="assets/js/materialize.js"></script>
-<script src="assets/js/materialize.min.js"></script> -->
-    <script src="assets/js/peekfile.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="./assets/js/peekfile.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4LwhAqGAstUc8yaViZjU2yPZDSzBwhPU&libraries=places&callback=initMap" async defer></script>
 
 </body>
 

@@ -3,7 +3,7 @@ let array = JSON.parse(localStorage.getItem("recipe"));
 $(document).ready(function(){
     console.log("yippie!!");
 
-    for (let i = 0; i<array.length; i++) {
+    for (let i = 1; i<array.length; i++) {
         let div1 = $("<div>").addClass("col s5");
 
         let card = $("<div>").addClass("card");
