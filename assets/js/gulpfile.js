@@ -75,15 +75,15 @@ function mapIt (input) {
   // function initialize() {
   //   console.log("inside initialize()");
   //   var center = new google.maps.LatLng(37.8647953, -122.2583164);
-  //   map = new google.maps.Map(document.getElementById("map"), {
+  //   map = new google.maps.Map(document.getElementById("row"), {
   //     center: center,
   //     zoom:13
   //   });
 
   //   var request = {
   //     location: ClientRect, 
-  //     radius: 8047, // in meters
-  //     types: ['cafe']
+  //     radius: 8047, // in meters, which means within 5 miles
+  //     types: [input]
   //   };
 
   //   infowindow = new google.maps.InfoWindow();
@@ -115,6 +115,7 @@ function mapIt (input) {
   // }
 
   // google.maps.event.addDomListener(window, 'load', initialize);
+  // $(window).attr("location", "locationPage.html");
 
   $.ajax({
     url: placeURL,
