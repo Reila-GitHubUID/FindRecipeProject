@@ -1,14 +1,21 @@
 body {
     background-color:#e4d6d6;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
    
 }
+main {
+    flex: 1 0 auto;
+  }
+      
 
 #imageId {
     background-image:url("../photos/sideways.png") ;
     background-repeat: no-repeat;
-    background-size: 17%;
+    background-size: 20%;
     background-origin: padding-box;
-    background-color:#cfc0c0;
+    background-color:#e4d6d6;
 }
 
 #title { 
@@ -73,7 +80,7 @@ body {
 }
 
 .mealTypesBtns {
-    margin-left: 30%;
+    margin-right: 50%;
 }
 
 
@@ -125,7 +132,7 @@ body {
 }
 
 #dietBtns {
-padding-bottom: 30px;
+padding-bottom: 50px;
 
 }
 
@@ -142,10 +149,17 @@ p {
 }
 
 #scoot {
-    margin-right: 22px;
+    margin-right: 10px;
+    
 }
 #scoot2 {
-    margin-left: 2px;
+    margin-left: 25px;
     margin-right: 10px;
-    margin-bottom: 12px;
+    margin-bottom: 30px;
+}
+
+#mainMenu{
+    margin-left: 100px;
+    padding-left: 300px;
+    
 }

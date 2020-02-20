@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 
+
 <head>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
@@ -39,6 +40,8 @@
         <li><a href="recipePage.html">Recipes</a></li>
         <li><a href="locationPage.html">Map</a></li>
       </ul>
+
+      
     </div>
   </nav>
 
@@ -51,7 +54,37 @@
     <!-- This is the location where the results will be displayed -->
   </div>
 
+      <!-- fixed btn -->
+      <div class="fixed-action-btn" id="fixedAct">
+        <a class="btn-floating btn-large waves-effect waves-light" href="index.html">
+          <i class="large material-icons">home</i>
+        </a>
+        <ul>
+          <li><a class="btn-floating waves-effect waves-light" id="menuBtn" href="locationPage.html"><i
+                class="material-icons">map</i></a>
+            <div id="scoot">Restaurants</div>
+          </li>
+          <li><a class="btn-floating waves-effect waves-light" id="menuBtn" href="recipePage.html"><i
+                class="material-icons">restaurant_menu</i></a>
+            <div id="scoot2">Recipes</div>
+          </li>
+        </ul>
+        <div>Main Menu</div>
+      </div>
 
+    <br>
+
+    <footer>
+      <nav class="nav teal lighten-2">
+        <div class="nav-wrapper container">
+          <div class="footer-copyright">
+            <div class="container">
+            © 2024 Copyright
+            </div>
+          </div>
+        </div>
+      </nav> 
+    </footer>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script src="./assets/js/peekfile.js"></script>
