@@ -1,4 +1,5 @@
 localStorage.setItem("recipe", "");
+// let temp = $(".filled-in").
 
 $(document).ready(function(){
   $(document).on('keypress',function(event) {
@@ -26,6 +27,14 @@ $(document).ready(function(){
       else if ($(this).text() === "Dine-Out") {
         findMap();
       }
+    }
+  });  
+
+  
+  $('input[type="checkbox"]').click(function() {
+    if($(this).prop("checked") == true){
+        alert("Checkbox is checked......" + $(this).attr("id"));
+
     }
   });
 
@@ -77,6 +86,7 @@ function findMap() {
     url: edamamURL,
     method: "GET"
   }).then( function(response) {
+    console.lget(response);
 
     let arr = [];
     if (response.q === "")
