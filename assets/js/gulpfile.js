@@ -133,3 +133,7 @@ function mapIt (input) {
 
   });
 }
+
+$(document).ready(function(){
+  $('.fixed-action-btn').floatingActionButton();
+});
