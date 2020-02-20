@@ -6,7 +6,7 @@ body {
 #imageId {
     background-image:url("../photos/sideways.png") ;
     background-repeat: no-repeat;
-    background-size: 17%;
+    background-size: 20%;
     background-origin: padding-box;
     background-color:#cfc0c0;
 }
@@ -142,10 +142,16 @@ p {
 }
 
 #scoot {
-    margin-right: 22px;
+    margin-right: 10px;
 }
 #scoot2 {
     margin-left: 2px;
     margin-right: 10px;
-    margin-bottom: 12px;
+    margin-bottom: 19px;
+}
+
+#navIndex {
+    margin-right: 50px;
+    padding-left: 275px;
+    margin-left: 799px;
 }

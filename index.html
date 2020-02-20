@@ -16,14 +16,20 @@
     <title>Recipes and Dine-Out</title>
 
     <!-- nav bar -->
-    <nav class="teal lighten-2">  
+    <nav class="nav-extended teal lighten-2">  
       <div class="nav-wrapper container">    
         <ul id="navBar" class="right">
           <li><a href="index.html">Main</a></li>
-          <li><a href="recipePage.html">Recipes</a></li>
-          <li><a href="locationPage.html">Map</a></li>
         </ul>
-      </div>  
+      </ul>
+    </div>
+    <div class="nav-content">
+      <ul class="tabs tabs-transparent">
+    <li class="tab disabled" id="navIndex"><a href="recipePage.html">Recipes</a></li>
+    <li class="tab disabled" id="navIndex2"><a href="locationPage.html">Map</a></li>
+      </ul>
+    </div>
+    
       <!-- main title -->
     </nav class="navBar">
     
@@ -235,13 +241,16 @@
 
 <!-- floating map icon btn -->
 
+
 <div class="fixed-action-btn" id="fixedAct">
   <a class="btn-floating btn-large waves-effect waves-light" href="index.html">
     <i class="large material-icons">home</i>
   </a>
   <ul>
-    <li><a class="btn-floating waves-effect waves-light" id="scoot" href="locationPage.html"><i class="material-icons">map</i></a>Restaurants</li>
-    <li><a class="btn-floating waves-effect waves-light" id="scoot2" href="recipePage.html"><i class="material-icons">restaurant_menu</i></a>Recipes</li>
+    <li><a class="btn-floating waves-effect waves-light" id="scoot" href="locationPage.html"><i class="material-icons">map</i></a>
+      <div id="scoot">Restaurants</div></li>
+    <li><a class="btn-floating waves-effect waves-light" id="scoot2" href="recipePage.html"><i class="material-icons">restaurant_menu</i></a>
+      <div id="scoot2">Recipes</div></li>
   </ul>
   <div>Main Menu</div>
 </div>
