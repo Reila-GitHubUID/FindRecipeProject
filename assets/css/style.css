@@ -13,7 +13,7 @@ main {
 #imageId {
     background-image:url("../photos/sideways.png") ;
     background-repeat: no-repeat;
-    background-size: 20%;
+    background-size: 19%;
     background-origin: padding-box;
     background-color:#e4d6d6;
 }
