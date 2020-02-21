@@ -48,3 +48,8 @@ function createMarker(place) {
         infowindow.open(map, this);
     });
 }
+
+
+$(document).ready(function(){
+  $('.fixed-action-btn').floatingActionButton();
+});
