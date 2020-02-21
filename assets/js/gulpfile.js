@@ -132,9 +132,22 @@ function findMap() {
 <<<<<<< Updated upstream
 
 }
+<<<<<<< HEAD
 =======
         
   $(document).ready(function(){
     $('.fixed-action-btn').floatingActionButton();
   });
 >>>>>>> Stashed changes
+=======
+
+$(document).ready(function(){
+  $('.fixed-action-btn').floatingActionButton();
+});
+
+// A function to find places recommendation
+// function mapIt (input) {
+//   console.log("*********** input ********" + input);
+//   let placeURL = "https://maps.googleapis.com/maps/api/json?input=" + input + "&inputtype=textquery&fields=photos,formatted_address,name,opening_hours,rating&locationbias=circle:2000@37.8647953,-122.2583164&key=AIzaSyC4LwhAqGAstUc8yaViZjU2yPZDSzBwhPU";
+// }
+>>>>>>> ccb5d550c68e2910e97844959e5218978bcc5b17

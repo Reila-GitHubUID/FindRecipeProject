@@ -2,8 +2,7 @@
 
 Discription: 
 
--   Our product is a basic recipe and dine-out app. It takes the users taste and shows them the recipes and or 
-resturants that have the types of food they have entered in. In additon it takens in data from the dietary restrictions and or allergies that have been selected and filters out recipes that may contain these traits.
+- Our product is a basic recipe and dine-out app. It takes the users taste and shows them the recipes and or resturants that have the types of food they have entered in. In additon it takens in data from the dietary restrictions and or allergies that have been selected and filters out recipes that may contain these traits.
 
 # Funtion 
 
@@ -21,12 +20,18 @@ The app contains many funtions such as:
 
 We used:
 
-- HTML
+- 3 HTML Pages
+    - index.html
+    - locationPage.html
+    - recipePage.html
 
-- CSS
+- Assets
+-   1 Css page
+    - styles.css
+- materilize
+- photos
 
-- Javascript
-
-- Jquery
-
-- Materilize
+- Javascript / Jquery
+    - chewfile.js
+    - gulpfile.js
+    - peekfile.js
