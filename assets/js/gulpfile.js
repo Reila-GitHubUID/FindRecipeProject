@@ -129,5 +129,12 @@ function findMap() {
     $(window).attr("location", "locationPage.html");  // this is to direct users to the locationPage.html
 
   });
+<<<<<<< Updated upstream
 
 }
+=======
+        
+  $(document).ready(function(){
+    $('.fixed-action-btn').floatingActionButton();
+  });
+>>>>>>> Stashed changes

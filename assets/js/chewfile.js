@@ -40,6 +40,11 @@ $(document).ready(function(){
 
 });
 
+<<<<<<< Updated upstream
+=======
+});
+
+>>>>>>> Stashed changes
 $(document).ready(function(){
     $('.fixed-action-btn').floatingActionButton();
   });
