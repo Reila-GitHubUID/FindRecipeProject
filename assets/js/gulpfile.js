@@ -48,7 +48,7 @@ function findRecipe() {
     url: edamamURL,
     method: "GET"
   }).then( function(response) {
-    console.log(response);
+    // console.log(response);
 
     let arr = [];
     if (response.q === "")
@@ -56,26 +56,42 @@ function findRecipe() {
       alert ("You've reached your ajax query limit. You won't be able to do any search anymore!");
     }
     else {
-      arr.push($("#search").val());
-      for (let i = 0; i < response.hits.length; i++) {      
-        for (let j = 0; j < response.hits[i].recipe.healthLabels.length; j++){
-          // console.log("response.hits["+i+"].recipe.healthLabels[" + j + "] = " + response.hits[i].recipe.healthLabels[j]);
+      arr.push($("#search").val());      
+            
+      if (restrictions.length === 0) {
+        // console.log("BBBBBBBBBBBBBBB");    
+        for (let i = 0; i < response.hits.length; i++) {      
+          arr.push({
+            label: response.hits[i].recipe.label,
+            ingredients: response.hits[i].recipe.ingredientLines,
+            url: response.hits[i].recipe.shareAs
+          });
+        }
+      }
+      else if (restrictions.length > 0) {
+        for (let i = 0; i < response.hits.length; i++) {      
+          for (let j = 0; j < response.hits[i].recipe.healthLabels.length; j++){
+            // console.log("response.hits["+i+"].recipe.healthLabels[" + j + "] = " + response.hits[i].recipe.healthLabels[j]);
 
-          for (let x = 0; x < restrictions.length; x++) {
-            // console.log("restrictions[" + x + "] = " + restrictions[x]);
-            if (response.hits[i].recipe.healthLabels[j] === restrictions[x]){
-
+            for (let x = 0; x < restrictions.length; x++) {
+              // console.log("restrictions[" + x + "] = " + restrictions[x]);
+              if (response.hits[i].recipe.healthLabels[j] === restrictions[x]){
+                // console.log("**********");
                 arr.push({
                   label: response.hits[i].recipe.label,
                   ingredients: response.hits[i].recipe.ingredientLines,
                   url: response.hits[i].recipe.shareAs
                 });
+              }
+              
+
             }
 
           }
-
         }
       }
+
+
     }
 
     localStorage.setItem("recipe", JSON.stringify(arr));
@@ -96,6 +112,7 @@ function findMap() {
     url: edamamURL,
     method: "GET"
   }).then( function(response) {
+    // console.log(response);
 
     let arr = [];
     if (response.q === "")
@@ -103,51 +120,52 @@ function findMap() {
       alert ("You've reached your ajax query limit. You won't be able to do any search anymore!");
     }
     else {
-      arr.push($("#search").val());
-      for (let i = 0; i < response.hits.length; i++) {      
-        for (let j = 0; j < response.hits[i].recipe.healthLabels.length; j++){
-          // console.log("response.hits["+i+"].recipe.healthLabels[" + j + "] = " + response.hits[i].recipe.healthLabels[j]);
+      arr.push($("#search").val());      
+            
+      if (restrictions.length === 0) {
+        // console.log("BBBBBBBBBBBBBBB");    
+        for (let i = 0; i < response.hits.length; i++) {      
+          arr.push({
+            label: response.hits[i].recipe.label,
+            ingredients: response.hits[i].recipe.ingredientLines,
+            url: response.hits[i].recipe.shareAs
+          });
+        }
+      }
+      else if (restrictions.length > 0) {
+        for (let i = 0; i < response.hits.length; i++) {      
+          for (let j = 0; j < response.hits[i].recipe.healthLabels.length; j++){
+            // console.log("response.hits["+i+"].recipe.healthLabels[" + j + "] = " + response.hits[i].recipe.healthLabels[j]);
 
-          for (let x = 0; x < restrictions.length; x++) {
-            // console.log("restrictions[" + x + "] = " + restrictions[x]);
-            if (response.hits[i].recipe.healthLabels[j] === restrictions[x]){
-
+            for (let x = 0; x < restrictions.length; x++) {
+              // console.log("restrictions[" + x + "] = " + restrictions[x]);
+              if (response.hits[i].recipe.healthLabels[j] === restrictions[x]){
+                // console.log("**********");
                 arr.push({
                   label: response.hits[i].recipe.label,
                   ingredients: response.hits[i].recipe.ingredientLines,
                   url: response.hits[i].recipe.shareAs
                 });
+              }
+              
+
             }
 
           }
-
         }
       }
+
+
     }
 
     localStorage.setItem("recipe", JSON.stringify(arr));
-    $(window).attr("location", "locationPage.html");  // this is to direct users to the locationPage.html
+    $(window).attr("location", "locationPage.html");  // this is to direct users to the recipePage.html
+
 
   });
-<<<<<<< Updated upstream
 
 }
-<<<<<<< HEAD
-=======
-        
-  $(document).ready(function(){
-    $('.fixed-action-btn').floatingActionButton();
-  });
->>>>>>> Stashed changes
-=======
 
 $(document).ready(function(){
   $('.fixed-action-btn').floatingActionButton();
 });
-
-// A function to find places recommendation
-// function mapIt (input) {
-//   console.log("*********** input ********" + input);
-//   let placeURL = "https://maps.googleapis.com/maps/api/json?input=" + input + "&inputtype=textquery&fields=photos,formatted_address,name,opening_hours,rating&locationbias=circle:2000@37.8647953,-122.2583164&key=AIzaSyC4LwhAqGAstUc8yaViZjU2yPZDSzBwhPU";
-// }
->>>>>>> ccb5d550c68e2910e97844959e5218978bcc5b17
