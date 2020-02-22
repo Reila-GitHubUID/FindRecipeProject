@@ -16,7 +16,7 @@ function initMap() {
     infowindow = new google.maps.InfoWindow();
 
     map = new google.maps.Map(
-        document.getElementById('map'), { center: berkeley, zoom: 15 });
+        document.getElementById('map'), { center: berkeley, zoom: 13});
 
         var request = {
             location: berkeley,
