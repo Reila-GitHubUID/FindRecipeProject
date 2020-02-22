@@ -40,7 +40,7 @@ $(document).ready(function(){
 // AJAX function to find the recipe, and redirect users to recipePage.html
 function findRecipe() {   
   event.preventDefault();
-  console.log('$("#search").val() === ' + $("#search").val());
+  // console.log('$("#search").val() === ' + $("#search").val());
 
   let edamamURL = "https://api.edamam.com/search?q=" + $("#search").val() + "&app_id=29622eed&app_key=898538197a883e8c6561872a165ee750";
 
@@ -48,7 +48,7 @@ function findRecipe() {
     url: edamamURL,
     method: "GET"
   }).then( function(response) {
-    console.log(response);
+    // console.log(response);
 
     let arr = [];
     if (response.q === "")
@@ -59,7 +59,7 @@ function findRecipe() {
       arr.push($("#search").val());      
             
       if (restrictions.length === 0) {
-        console.log("BBBBBBBBBBBBBBB");    
+        // console.log("BBBBBBBBBBBBBBB");    
         for (let i = 0; i < response.hits.length; i++) {      
           arr.push({
             label: response.hits[i].recipe.label,
@@ -71,12 +71,12 @@ function findRecipe() {
       else if (restrictions.length > 0) {
         for (let i = 0; i < response.hits.length; i++) {      
           for (let j = 0; j < response.hits[i].recipe.healthLabels.length; j++){
-            console.log("response.hits["+i+"].recipe.healthLabels[" + j + "] = " + response.hits[i].recipe.healthLabels[j]);
+            // console.log("response.hits["+i+"].recipe.healthLabels[" + j + "] = " + response.hits[i].recipe.healthLabels[j]);
 
             for (let x = 0; x < restrictions.length; x++) {
-              console.log("restrictions[" + x + "] = " + restrictions[x]);
+              // console.log("restrictions[" + x + "] = " + restrictions[x]);
               if (response.hits[i].recipe.healthLabels[j] === restrictions[x]){
-                console.log("**********");
+                // console.log("**********");
                 arr.push({
                   label: response.hits[i].recipe.label,
                   ingredients: response.hits[i].recipe.ingredientLines,
@@ -112,6 +112,7 @@ function findMap() {
     url: edamamURL,
     method: "GET"
   }).then( function(response) {
+    // console.log(response);
 
     let arr = [];
     if (response.q === "")
@@ -119,30 +120,47 @@ function findMap() {
       alert ("You've reached your ajax query limit. You won't be able to do any search anymore!");
     }
     else {
-      arr.push($("#search").val());
-      for (let i = 0; i < response.hits.length; i++) {      
-        for (let j = 0; j < response.hits[i].recipe.healthLabels.length; j++){
-          // console.log("response.hits["+i+"].recipe.healthLabels[" + j + "] = " + response.hits[i].recipe.healthLabels[j]);
+      arr.push($("#search").val());      
+            
+      if (restrictions.length === 0) {
+        // console.log("BBBBBBBBBBBBBBB");    
+        for (let i = 0; i < response.hits.length; i++) {      
+          arr.push({
+            label: response.hits[i].recipe.label,
+            ingredients: response.hits[i].recipe.ingredientLines,
+            url: response.hits[i].recipe.shareAs
+          });
+        }
+      }
+      else if (restrictions.length > 0) {
+        for (let i = 0; i < response.hits.length; i++) {      
+          for (let j = 0; j < response.hits[i].recipe.healthLabels.length; j++){
+            // console.log("response.hits["+i+"].recipe.healthLabels[" + j + "] = " + response.hits[i].recipe.healthLabels[j]);
 
-          for (let x = 0; x < restrictions.length; x++) {
-            // console.log("restrictions[" + x + "] = " + restrictions[x]);
-            if (response.hits[i].recipe.healthLabels[j] === restrictions[x]){
-
+            for (let x = 0; x < restrictions.length; x++) {
+              // console.log("restrictions[" + x + "] = " + restrictions[x]);
+              if (response.hits[i].recipe.healthLabels[j] === restrictions[x]){
+                // console.log("**********");
                 arr.push({
                   label: response.hits[i].recipe.label,
                   ingredients: response.hits[i].recipe.ingredientLines,
                   url: response.hits[i].recipe.shareAs
                 });
+              }
+              
+
             }
 
           }
-
         }
       }
+
+
     }
 
     localStorage.setItem("recipe", JSON.stringify(arr));
-    $(window).attr("location", "locationPage.html");  // this is to direct users to the locationPage.html
+    $(window).attr("location", "locationPage.html");  // this is to direct users to the recipePage.html
+
 
   });
 
